@@ -10,7 +10,7 @@ def eating_cookies(n, cache=None):
     cache = {}
   if n < 2:
     return 1
-  elif n in cache and cache[n] > 0:
+  elif len(cache) > 0 and cache[n] > 0 :
     # cache = {i: cache[i] for i in range(0, len(cache))}
     return cache[n]
   elif n < 4: 
